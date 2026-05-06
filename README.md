@@ -17,14 +17,7 @@ pip install -r requirements.txt
 ```
 
 
-## Running on Dataset
-
-### Prepare the Dataset
-
-To ensure a fair comparison and strictly follow the standard evaluation protocol, we adopt the dataset splits provided by previous work CoOp.
-Please refer to their official guide for downloading and setting up the datasets: [CoOp](https://github.com/KaiyangZhou/CoOp/blob/main/DATASETS.md)
-
-After setting up the datasets according to the guide above, please update the dataset paths in `xtail_ABE.py` and `xtail_ABE_16_shot.py` to match your local environment.
+## Running
 
 ### Reproduction
 
