@@ -1,4 +1,12 @@
-# Mitigating Asymmetric Boundary Encroachment in Continual Learning of Vision-Language Models
+# Mitigating Asymmetric Boundary Encroachment in Continual Learning of Vision-Language Models (NeurIPS 2026)
+
+
+## Authors
+
+Mingfeng Li¹, Xinyang Chen¹, Xiucheng Li¹, Weili Guan², and Liqiang Nie¹
+
+¹ School of Computer Science and Technology, Harbin Institute of Technology (Shenzhen)  
+² School of Information Science and Technology, Harbin Institute of Technology (Shenzhen)
 
 ## Requirements
 
@@ -16,6 +24,18 @@ pip install torch==2.4.1 torchvision==0.19.1 torchaudio==2.4.1 --index-url https
 pip install -r requirements.txt
 ```
 
+## Datasets
+
+Our X-TAIL experiments use ten datasets: FGVC Aircraft, Caltech101, DTD, EuroSAT, Oxford Flowers 102, Food-101, MNIST, Oxford-IIIT Pet, Stanford Cars, and SUN397. We follow the CoOp dataset setting, including its class definitions and train/test splits.
+
+Please refer to the [CoOp dataset setup guide](https://github.com/KaiyangZhou/CoOp/blob/main/DATASETS.md) for preparation instructions.
+
+The paper evaluates two task orders:
+
+* **Order I:** Aircraft → Caltech101 → DTD → EuroSAT → Flowers → Food-101 → MNIST → Oxford Pets → Stanford Cars → SUN397.
+* **Order II:** Stanford Cars → Aircraft → Oxford Pets → Food-101 → SUN397 → MNIST → Flowers → DTD → Caltech101 → EuroSAT.
+
+Both orders are evaluated in 16-shot and full-shot settings.
 
 ## Running
 
@@ -40,4 +60,3 @@ cd ABE_CL_VLM
 ```
 
 Each script will automatically run the full experimental pipeline, including training and evaluation, and output the final accuracy metrics.
-
