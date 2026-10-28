@@ -60,3 +60,7 @@ cd ABE_CL_VLM
 ```
 
 Each script will automatically run the full experimental pipeline, including training and evaluation, and output the final accuracy metrics.
+
+## Acknowledgments
+
+We thank the authors of [RAIL](https://github.com/linghan1997/Regression-based-Analytic-Incremental-Learning) and [CoOp](https://github.com/KaiyangZhou/CoOp) for sharing their code, which served as references for our implementation.
