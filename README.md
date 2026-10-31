@@ -163,23 +163,20 @@ From the repository root, run the corresponding script:
 ./run_seeds_full_shot_order_II.sh
 ```
 
-Each script runs the experimental pipeline, including training and evaluation, and outputs final accuracy metrics, as described in the original repository README.
+Each script runs the experimental pipeline, including training and evaluation, and outputs final accuracy metrics.
 
 ## Experimental Results
 
 ### Main Results on X-TAIL (Order I)
 
-The following scores (%) are reported in the paper. Our results are averaged over five random seeds.
+The following results (%) are averaged over five random seeds.
 
-| Setting | Method | Transfer ↑ | Average ↑ | Last ↑ |
-| --- | --- | ---: | ---: | ---: |
-| 16-shot | LADA | 61.5 | 72.4 | 83.0 |
-| 16-shot | **Ours** | **63.4** | **74.4** | **84.4** |
-| Full-shot | LADA | 61.9 | 75.1 | 86.9 |
-| Full-shot | **Ours** | **63.1** | **76.5** | **87.5** |
+| **Setting** | **Transfer** | **Average** | **Last** |
+| ----------- | -------------- | ------------- | ---------- |
+| **16-shot** | 63.4 | 74.4 | 84.4 |
+| **Full-shot** | 63.1 | 76.5 | 87.5 |
 
-The proposed framework improves on LADA across all three reported metrics in both settings. See **Tables 2–3** in the paper for comparisons with additional baselines and per-dataset results.
-
+For more experimental results and detailed comparisons, please refer to **Tables 2–3 in the paper**.
 
 ## Citation
 
